@@ -17,7 +17,7 @@ after_success:
   #login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #take those images and push them to docker hub
-  - docker push maswerty94/multi-client
-  - docker push maswerty94/multi-nginx
-  - docker push maswerty94/multi-server
-  - docker push maswerty94/multi-worker
+  - docker push maswerty/multi-client
+  - docker push maswerty/multi-nginx
+  - docker push maswerty/multi-server
+  - docker push maswerty/multi-worker
